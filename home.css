@@ -157,6 +157,50 @@ a{
     text-decoration: underline;
 }
 
+/* SECTION 2 */
+
+.section2{
+    display: flex;
+    background-image: url(assets/home/img/banner-2.jpg);
+    width: 100%;
+    height: 680px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2 div{
+    display: flex;
+    flex-direction: column;
+    padding-left: 21%;
+
+}
+
+.section2 div span:nth-child(2){
+    font-size: 48px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.section2 div a{
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* RESPONSIVE */
 
 @media screen and (max-width: 1275px) {
@@ -200,5 +244,19 @@ a{
 
     .section1 div{
         padding-top: 10%;
+    }
+
+    /* SECTION 2 */
+
+    .section2{
+        background: url(assets/home/img/section2-mobile.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .section2 div{
+        padding-bottom: 30%;
+        padding-left: 5%;
     }
 }
