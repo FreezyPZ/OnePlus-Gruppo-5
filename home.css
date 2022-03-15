@@ -25,6 +25,8 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    background-color: white;
 }
 
 .logo-svg{
@@ -223,6 +225,46 @@ a{
     text-decoration: underline;
 }
 
+/* SECTION 4 */
+
+.section4{
+    display: flex;
+    justify-content: center;
+}
+
+.section4 div{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+    padding-top: 2%;
+    gap: 7vh;
+    text-align: center;
+    color: #404040;
+    font-weight: 400;
+}
+
+.section4 div:first-child img{
+    width: 200px;
+    height: 65px;
+}
+
+.section4 div:nth-child(2) img{
+    width: 65px;
+    height: 65px;
+}
+
+.section4 div:last-child img{ 
+    width: 200px;
+    height: 65px;
+    padding-bottom: 20px;
+}
+
+.section4 div a{
+    color:black;
+    text-decoration: underline;
+}
+
 /* RESPONSIVE */
 
 @media screen and (max-width: 1275px) {
@@ -242,7 +284,7 @@ a{
         display: none;
         flex-direction: column;
         position: fixed;
-        top:61px;
+        top:60px;
         left: 0;
         width: 100vw;
         height: calc(100vh - 61px);
@@ -294,5 +336,18 @@ a{
     .section3 div{
         padding-bottom: 30%;
         padding-left: 5%;
+    }
+
+    /* SECTION 4 */
+
+    .section4{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .section4 div{
+        width: 100%;
     }
 }
