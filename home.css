@@ -230,6 +230,7 @@ a{
 .section4{
     display: flex;
     justify-content: center;
+    margin-bottom: 5%;
 }
 
 .section4 div{
@@ -265,9 +266,107 @@ a{
     text-decoration: underline;
 }
 
+/* SECTION 5 */
+
+.section5{
+    background-image: url(assets/home/img/banner-4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.section5 div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    padding-top: 70px;
+    gap:10px;
+    
+}
+
+.section5 div p:first-child{
+    text-align: center;
+    font-size: 48px;
+}
+
+#email{
+    width: 400px;
+    height: 40px;
+    font-size: 18px;
+    padding-left: 10px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    background-color: #f6f6f6;
+    margin-bottom: 20px;
+}
+
+.section5 div span{
+    text-decoration: underline;
+    margin-left: 3px;
+}
+
+.section5 a{
+    color: black;
+}
+
+/* BOTTOM NAVBAR */
+
+.bott_nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bott_nav div:first-child{
+    display: flex;
+    gap: 5vw;
+}
+
+.bott_nav div ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-top: 40px;
+    gap: 16px;
+}
+
+.bott_nav div ul li:first-child{
+    color: black;
+    padding-bottom: 28px;
+}
+
+
+.bott_nav div ul li a{
+    color: #828282;
+}
+
+.bott_nav div:last-child{
+    display: flex;
+    width: 65%;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-top:40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* RESPONSIVE */
 
 @media screen and (max-width: 1275px) {
+
+    /* HEADER */
 
     .top-nav{
         flex-direction: column;
@@ -299,6 +398,8 @@ a{
         display: flex;
     }
 
+    /* SECTION 1 */
+
     .section1{
         background: url(assets/home/img/section1-mobile.jpg);
         background-position: center;
@@ -307,7 +408,11 @@ a{
     }
 
     .section1 div{
-        padding-top: 10%;
+        padding-top: 19%;
+    }
+
+    .section1 div span:nth-child(2){
+        padding-bottom: 20px;
     }
 
     /* SECTION 2 */
@@ -349,5 +454,18 @@ a{
 
     .section4 div{
         width: 100%;
+    }
+
+    /* SECTION 5 */
+
+    .section5 div p:first-child{
+        text-align: center;
+        font-size: 24px;
+    }
+
+    #email{
+        width: 100%;
+        margin: 0 .5vw;
+        margin-bottom: 20px;
     }
 }
