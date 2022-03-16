@@ -269,6 +269,8 @@ a{
 
 @media screen and (max-width: 1275px) {
 
+    /* HEADER */
+
     .top-nav{
         flex-direction: column;
     }
@@ -299,6 +301,8 @@ a{
         display: flex;
     }
 
+    /* SECTION 1 */
+
     .section1{
         background: url(assets/home/img/section1-mobile.jpg);
         background-position: center;
@@ -307,7 +311,11 @@ a{
     }
 
     .section1 div{
-        padding-top: 10%;
+        padding-top: 19%;
+    }
+
+    .section1 div span:nth-child(2){
+        padding-bottom: 20px;
     }
 
     /* SECTION 2 */
