@@ -15,7 +15,12 @@ a{
 }
 
 /* HEADER */
-
+header{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 61px;
+}
 
 /* NAVBAR */
 
@@ -25,7 +30,6 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
     background-color: white;
 }
 
@@ -282,7 +286,6 @@ a{
     font-size: 18px;
     padding-top: 70px;
     gap:10px;
-    
 }
 
 .section5 div p:first-child{
@@ -297,7 +300,6 @@ a{
     padding-left: 10px;
     border: 1px solid rgba(255, 255, 255, 1);
     background-color: #f6f6f6;
-    margin-bottom: 20px;
 }
 
 .section5 div span{
@@ -307,6 +309,7 @@ a{
 
 .section5 a{
     color: black;
+    font-size: 14px;
 }
 
 /* BOTTOM NAVBAR */
@@ -315,24 +318,27 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 8vh;
 }
 
-.bott_nav div:first-child{
+.bott_nav > div:first-child{
     display: flex;
-    gap: 5vw;
+    gap: 7vw;
+    width: 70%;
+    padding-top: 30px;
 }
 
 .bott_nav div ul{
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    padding-top: 40px;
-    gap: 16px;
+    gap: 20px;
 }
 
 .bott_nav div ul li:first-child{
     color: black;
-    padding-bottom: 28px;
+    padding-bottom: 5px;
 }
 
 
@@ -340,27 +346,56 @@ a{
     color: #828282;
 }
 
-.bott_nav div:last-child{
-    display: flex;
-    width: 65%;
-    justify-content: flex-end;
-    gap: 20px;
-    padding-top:40px;
+.bott_nav div ul li a:hover{
+    color: black;
 }
 
+.bott_nav > div:last-child{
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 2vh 2vw;
+}
 
+.checkbox-hidden{
+    display: none;
+}
 
+/* FOOTER */
 
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid silver;
+}
 
+footer > div{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 100px;
+    padding-top: 2vh;
+}
 
+footer ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    font-size: 12px;
+}
 
+.footer-box1 ul li a{
+    border-right: 1px solid silver;
+    padding-right: 1vw;
+    color: #363636;
+}
 
+.footer-box1 ul li:last-child a{
+    border-right: none;
 
-
-
-
-
-
+}
 
 /* RESPONSIVE */
 
@@ -386,7 +421,7 @@ a{
         top:60px;
         left: 0;
         width: 100vw;
-        height: calc(100vh - 61px);
+        height: calc(100vh - 60px);
         justify-content: flex-start;
     }
 
@@ -468,4 +503,97 @@ a{
         margin: 0 .5vw;
         margin-bottom: 20px;
     }
+
+    /* BOTTOM NAVBAR */
+
+    .bott_nav > div:first-child{
+        flex-direction: column;
+        gap:0;
+        width: 100%;
+    }
+
+    .bott_nav > div:last-child{
+        justify-content: center;
+        gap: 2vh;
+        width: 100%;
+    }
+
+    .menu-mobile{
+        height: 50px;
+        overflow: hidden;
+        border-width: 1px 0;
+        border-style: solid;
+        border-color: silver;
+        padding: 15px 10px;
+    }
+
+    #menu1-check:checked ~* .menu-1{
+        height: 350px;
+        overflow: hidden;
+        border-width: 1px 0;
+        border-style: solid;
+        border-color: silver;
+        padding: 15px 10px;
+    }
+
+    #menu2-check:checked ~* .menu-2{
+        height: 300px;
+        overflow: hidden;
+        border-width: 1px 0;
+        border-style: solid;
+        border-color: silver;
+        padding: 15px 10px;
+    }
+
+    #menu3-check:checked ~* .menu-3{
+        height: 270px;
+        overflow: hidden;
+        border-width: 1px 0;
+        border-style: solid;
+        border-color: silver;
+        padding: 15px 10px;
+    }
+
+    #menu4-check:checked ~* .menu-4{
+        height: 200px;
+        overflow: hidden;
+        border-width: 1px 0;
+        border-style: solid;
+        border-color: silver;
+        padding: 15px 10px;
+    }
+
+    #menu5-check:checked ~* .menu-5{
+        height: 300px;
+        overflow: hidden;
+        border-width: 1px 0;
+        border-style: solid;
+        border-color: silver;
+        padding: 15px 10px;
+    }
+
+    /* FOOTER */
+
+    .footer-box1{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: initial;
+        width: 100%;
+        padding-left: 3vw;
+        gap: 2vh;
+        border-bottom: 1px solid silver;
+    }
+
+    .footer-box1 ul{
+        flex-wrap: wrap;
+    }
+
+    .footer-box2{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding-left: 3vw;
+        gap: 1vh;
+    }
+
 }
