@@ -286,7 +286,6 @@ header{
     font-size: 18px;
     padding-top: 70px;
     gap:10px;
-    
 }
 
 .section5 div p:first-child{
@@ -323,17 +322,17 @@ header{
     gap: 8vh;
 }
 
-.bott_nav div:first-child{
+.bott_nav > div:first-child{
     display: flex;
     gap: 7vw;
     width: 70%;
+    padding-top: 30px;
 }
 
 .bott_nav div ul{
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    padding-top: 30px;
     gap: 20px;
 }
 
@@ -351,12 +350,16 @@ header{
     color: black;
 }
 
-.bott_nav div:last-child{
+.bott_nav > div:last-child{
     display: flex;
     width: 70%;
     justify-content: flex-end;
     gap: 20px;
     padding: 2vh 2vw;
+}
+
+.checkbox-hidden{
+    display: none;
 }
 
 /* FOOTER */
@@ -394,20 +397,6 @@ footer ul{
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* RESPONSIVE */
 
 @media screen and (max-width: 1275px) {
@@ -434,7 +423,6 @@ footer ul{
         width: 100vw;
         height: calc(100vh - 60px);
         justify-content: flex-start;
-    
     }
 
     .mobile-menu ul{
@@ -518,6 +506,72 @@ footer ul{
 
     /* BOTTOM NAVBAR */
 
+    .bott_nav > div:first-child{
+        flex-direction: column;
+        gap:0;
+        width: 100%;
+    }
+
+    .bott_nav > div:last-child{
+        justify-content: center;
+        gap: 2vh;
+        width: 100%;
+    }
+
+    .menu-mobile{
+        height: 50px;
+        overflow: hidden;
+        border-width: 1px 0;
+        border-style: solid;
+        border-color: silver;
+        padding: 15px 10px;
+    }
+
+    #menu1-check:checked ~* .menu-1{
+        height: 350px;
+        overflow: hidden;
+        border-width: 1px 0;
+        border-style: solid;
+        border-color: silver;
+        padding: 15px 10px;
+    }
+
+    #menu2-check:checked ~* .menu-2{
+        height: 300px;
+        overflow: hidden;
+        border-width: 1px 0;
+        border-style: solid;
+        border-color: silver;
+        padding: 15px 10px;
+    }
+
+    #menu3-check:checked ~* .menu-3{
+        height: 270px;
+        overflow: hidden;
+        border-width: 1px 0;
+        border-style: solid;
+        border-color: silver;
+        padding: 15px 10px;
+    }
+
+    #menu4-check:checked ~* .menu-4{
+        height: 200px;
+        overflow: hidden;
+        border-width: 1px 0;
+        border-style: solid;
+        border-color: silver;
+        padding: 15px 10px;
+    }
+
+    #menu5-check:checked ~* .menu-5{
+        height: 300px;
+        overflow: hidden;
+        border-width: 1px 0;
+        border-style: solid;
+        border-color: silver;
+        padding: 15px 10px;
+    }
+
     /* FOOTER */
 
     .footer-box1{
@@ -541,7 +595,5 @@ footer ul{
         padding-left: 3vw;
         gap: 1vh;
     }
-
-
 
 }
